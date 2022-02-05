@@ -1,0 +1,239 @@
+/* fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Roboto:wght@500&display=swap');
+
+/* common style  */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color:#F3F1FF;
+    margin: 0;
+}
+main{
+    margin: 30px 285px;
+}
+.header-footer{
+    height: 95px;
+    background: #562EFF;
+    color: white;
+}
+h2{
+    color: #562EFF;
+    font-size: 24px;
+    margin-top: 3px;
+}
+.container{
+    background-color: white;
+    width: 870px;
+    padding: 33px;
+    border-radius: 5px;
+}
+hr{
+    border: 1px solid #D1D1D1;
+    margin-bottom: 27px;
+}
+/* header  */
+header{
+    padding-left: 285px;
+    padding-right: 285px;
+    display: flex;
+    justify-content: space-between;
+}
+.header-logo{
+    display: flex;
+    align-items: center;
+}
+.header-logo img{
+    height: 50px;
+    width: 40px;
+}
+.header-logo h1{
+    font-size: 24px;
+    padding-left: 10px;
+}
+/* navigation bar  */
+nav{
+    display: flex;
+    align-items: center;
+}
+.nav-items{
+    width: 250px;
+}
+.nav-items a{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    margin-right: 10%;
+}
+.nav-items img{
+    width: 51px;
+    height: 51px;
+}
+.nav-items a:hover{
+    color: black;
+}
+.bar{
+    display: none;
+}
+
+/* top player */
+.top-player{
+    margin-bottom: 30px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+    
+}
+.player{
+    display: flex;
+    align-items: center;
+}
+.player img{
+    height: 56px;
+    width: 56px;
+}
+.player-name{
+    font-size: 18px;
+    margin-left: 16px;
+}
+
+/* Top Blog */
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 26px;
+}
+article{
+    display: flex;
+}
+.blogs .thumbail img{
+    height: 117px;
+    width: 177px;
+}
+.blog-title{
+    font-size: 20px;
+}
+.blog-info{
+    margin-left: 16px;
+}
+.blog-author{
+    font-size: 16px;
+    color: #9F9F9F;
+}
+.blog-author a{
+    text-decoration: none;
+    color:#562EFF;
+}
+
+/* Latest Course Section  */
+.latest-courses{
+    margin-top: 21px;
+}
+.courses{
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 23px;
+}
+.course{
+    box-shadow: 0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05);
+}
+.course img{
+    width: 224px;
+    height: 104px;
+}
+.course-instractor{
+    font-size: 14.5px;
+    color:#ED6B4F;
+    ;
+}
+
+/* rating section  */
+.rating-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fa-star{
+    font-size: 12px;
+}
+.fa-star.fill{
+    color:#FFC014;
+}
+.fa-star.empty{
+    color:#AEAEAE;
+}
+.rating{
+    color:#A2A2A2;
+}
+.remaining-time{
+    color:#FF4A60;
+    background-color: #FFE4E8;
+    border-radius: 15px;
+    padding: 5px;
+
+}
+
+/* footer  */
+footer{
+    padding-top: 5px;
+    text-align: center;
+}
+
+/* Media Queries  */
+
+/* For Mobile  */
+@media only screen and (max-width:767px) {
+    .nav-items, .nav-photo{
+        display: none;
+    }
+    .bar{
+        display: block;
+    }
+    main{
+        margin: 5%;
+    }
+    header{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .container{
+        width: 80%;
+    }
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player, article, .course{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .thumbail img, .course img{
+        padding-left: 5%;
+    }
+}
+
+/* For tablet  */
+@media only screen and (min-width:767px) and (max-width:1023px) {
+    main{
+        margin: 30px 150px;
+    }
+    header{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .container{
+        width: 90%;
+    }
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .player, article, .course{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .thumbail img, .course img{
+        width: 90%;
+        padding-left: 5%;
+    }
+}
