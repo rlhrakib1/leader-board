@@ -192,7 +192,7 @@ footer{
         display: block;
     }
     main{
-        margin: 5%;
+        margin: 5% 10%;
     }
     header{
         padding-left: 5%;
@@ -214,9 +214,9 @@ footer{
 }
 
 /* For tablet  */
-@media only screen and (min-width:767px) and (max-width:1023px) {
+@media only screen and (min-width:768px) and (max-width:1024px) {
     main{
-        margin: 30px 150px;
+        margin: 30px 15%;
     }
     header{
         padding-left: 5%;
